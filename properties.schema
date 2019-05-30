@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {},
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object"
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties": {
+            "_assessmentUseAttempts": {
+              "type": "object",
+              "required": false,
+              "legend": "AssessmentUseAttempts",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "title": "Enable",
+                  "inputType": "Checkbox",
+                  "help": "Assessment uses attempts spent to setup questions banks"
+                },
+                "_totalQuestions": {
+                  "type": "number",
+                  "default": 1,
+                  "title": "Total questions",
+                  "validators": ["number"],
+                  "inputType": "Number",
+                  "help": "Enter a number of questions to be drawn from each identified block"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "adapt-assessmentUseAttempts.js",
+    "repository": "http://github.com/nachocinalli/adapt-assessmentUseAttempts",
+    "framework": ">=2.0.0",
+    "version": "1.1.0",
+    "displayName": "AssessmentUseAttempts",
+    "extension": "assessmentUseAttempts",
+    "description": "Assessment uses attempts spent to setup questions banks",
+    "main": "/js/adapt-assessmentUseAttempts.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension"
+    ],
+    "authors": [
+        "Ignacio Cinalli <nachocinalli@gmail.com>"
+    ],
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/nachocinalli/adapt-assessmentUseAttempts",
+    "targetAttribute": "_assessmentUseAttempts"
+}
